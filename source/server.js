@@ -29,7 +29,7 @@ app.use(function(req, res, next) {
 });
 
 //Start server
-app.listen(8000, () => {
+app.listen(80, () => {
     console.log('Server started!');
 })
 
