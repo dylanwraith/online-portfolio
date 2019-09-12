@@ -33,11 +33,11 @@ app.listen(8000, () => {
     console.log('Server started!');
 })
 
-//Start database
-con.connect(function(err) {
-    if (err) throw err;
-    console.log('Database connected!');
-});
+// Start database
+// con.connect(function(err) {
+//     if (err) throw err;
+//     console.log('Database connected!');
+// });
 
 //Get all data
 app.route('/api/projects').get((req, res) => {
