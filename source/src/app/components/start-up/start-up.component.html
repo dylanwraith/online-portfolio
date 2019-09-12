@@ -1,0 +1,234 @@
+<p style="font-size: 100px; font-smoothing: antialiased; -webkit-font-smoothing: none; font-family: 'pokemon-font', monospace;">
+    pokemon font
+</p>
+<div style="height: 100%; width: 100%;" fxLayout="column">
+    <div style="background-color: rgb(88, 172, 175); width: 100%; height: 50px;" fxLayout="row"
+        fxLayoutAlign="end center">
+        <mat-tab-group [selectedIndex]="selected.value" (selectedIndexChange)="selected.setValue($event)"
+            [@fade]=navigationStatus style="width: 100%; height: 50px;" color="accent"
+            backgroundColor="rgb(88,172,175)">
+            <mat-tab label="projects">
+                <ng-template mat-tab-label fxLayout="row">
+                    <mat-icon class="custom_menu_icon">create</mat-icon>
+                    <div class="custom_menu_text" style="margin-left: 10px;">projects</div>
+                </ng-template>
+                <div>hello</div>
+            </mat-tab>
+            <mat-tab label="aboutme">
+                <ng-template mat-tab-label>
+                    <mat-icon class="custom_menu_icon">sports_esports</mat-icon>
+                    <div class="custom_menu_text">about me</div>
+                </ng-template>
+            </mat-tab>
+            <mat-tab label="resume">
+                <ng-template mat-tab-label>
+                    <mat-icon class="custom_menu_icon">description</mat-icon>
+                    <div class="custom_menu_text">resume</div>
+                </ng-template>
+            </mat-tab>
+            <mat-tab label="contactme">
+                <ng-template mat-tab-label>
+                    <mat-icon class="custom_menu_icon">email</mat-icon>
+                    <div class="custom_menu_text">contact me</div>
+                </ng-template>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+    <div [@fade]=closeStatus style="background-color: rgb(88, 172, 175); width: 100%; height: calc(10%-50px);"></div>
+    <div [@fade]=closeStatus style="background-color: rgb(88, 172, 175); width: 100%; height: 50%;" fxLayout="row">
+        <img [@fade]=imageStatus src="../assets/my_face.png" style="height: 100%; width: auto; padding-left: 5%;">
+        <div fxLayout="column" fxLayoutAlign="space-between none" style="width: 100%;">
+            <div [@fade]=textStatus class="mat-h2"
+                style="margin-left: 5%; width: 80%; position: relative; height: inherit;">
+                <div style="z-index: 2; position: absolute; top: 0; left: 0;">
+                    {{ this.message }}
+                </div>
+                <div
+                    style="padding-right: 50px; z-index: 1; position: absolute; top: 0; left: 0; color: transparent; background-color: whitesmoke; padding-top: 6%; margin-top: -3%; margin-left: -3%; margin-right: -3%; border-radius: 20px; border-bottom-left-radius: 0px; border-color: black; border-width: 5px; border-style: solid">
+                    {{ this.tempMessage }}
+                </div>
+            </div>
+            <div [@fade]=buttonStatus fxLayout="row" fxLayoutAlign="space-evenly center">
+                <div fxLayout="column" fxLayoutAlign="center center">
+                    <button mat-fab class="custom_button" (click)="buttonClick()">
+                        <mat-icon class="custom_icon">create</mat-icon>
+                    </button>
+                    <div class="mat-small button_description">projects</div>
+                </div>
+                <div fxLayout="column" fxLayoutAlign="center center">
+                    <button mat-fab class="custom_button">
+                        <mat-icon class="custom_icon">sports_esports</mat-icon>
+                    </button>
+                    <div class="mat-small button_description">about me</div>
+                </div>
+                <div fxLayout="column" fxLayoutAlign="center center">
+                    <button mat-fab class="custom_button">
+                        <mat-icon class="custom_icon">description</mat-icon>
+                    </button>
+                    <div class="mat-small button_description">resume</div>
+                </div>
+                <div fxLayout="column" fxLayoutAlign="center center">
+                    <button mat-fab class="custom_button">
+                        <mat-icon class="custom_icon">email</mat-icon>
+                    </button>
+                    <div class="mat-small button_description">contact me</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div [@fade]=closeStatus style="background-color: rgb(88, 172, 175); width: 100%; height: 10%;"></div>
+    <div [@fade]=bottomStatus style="background-color: rgb(27, 79, 95); width: 100%;" fxFlex>
+        <div *ngIf="selected.value === 0" fxLayout="row" fxLayoutAlign="center center" style="height: 100%">
+            <div fxFlex="10" fxLayoutAlign="center center">
+                <button mat-fab style="background-color: grey;" (click)="swipeLeft()">
+                    <mat-icon style="margin-left: 8px;">arrow_back_ios</mat-icon>
+                </button>
+            </div>
+            <div fxFlex="80" style="height: 100%;" fxLayoutAlign="center center"></div>
+            <!--  -->
+
+            <div fxFlex="22" style="position: absolute" [@fade]=projectStatuses[0]>
+                <mat-card class="center_card">
+                    <mat-card-header style="padding: 0px 10px;">
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Kymera</mat-card-title>
+                        <mat-card-subtitle>Software Management Tool</mat-card-subtitle>
+                    </mat-card-header>
+                    <img src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                        alt="Photo of a Shiba Inu" style="width: 100%; margin: 0px;">
+                    <mat-card-content style="padding: 0px 10px;">
+                        <p>
+                            <strong>Technologies:</strong> Angular 8, Angular Material, ASP.NET Core, Entity
+                            Framework
+                            <br />
+                            <strong>Laguages:</strong> HTML, SCSS, Typescript, C#
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions style="padding-bottom: 10px; padding-left: 20px;">
+                        <button mat-raised-button color="accent">LIKE</button>
+                        <button mat-raised-button color="accent">SHARE</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+            <!--  -->
+
+            <div fxFlex="22" style="position: absolute" [@fade]=projectStatuses[1]>
+                <mat-card class="center_card">
+                    <mat-card-header style="padding: 0px 10px;">
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Kymera</mat-card-title>
+                        <mat-card-subtitle>Software Management Tool</mat-card-subtitle>
+                    </mat-card-header>
+                    <img src="../../../assets/ems.png"
+                        alt="Photo of a Shiba Inu" style="width: 100%; margin: 0px;">
+                    <mat-card-content style="padding: 0px 10px;">
+                        <p>
+                            <strong>Technologies:</strong> Angular 8, Angular Material, ASP.NET Core, Entity
+                            Framework
+                            <br />
+                            <strong>Laguages:</strong> HTML, SCSS, Typescript, C#
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions style="padding-bottom: 10px; padding-left: 20px;">
+                        <button mat-raised-button color="accent">LIKE</button>
+                        <button mat-raised-button color="accent">SHARE</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+            <!--  -->
+
+            <div fxFlex="22" style="position: absolute" [@fade]=projectStatuses[2]>
+                <mat-card class="center_card">
+                    <mat-card-header style="padding: 0px 10px;">
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Kymera</mat-card-title>
+                        <mat-card-subtitle>Software Management Tool</mat-card-subtitle>
+                    </mat-card-header>
+                    <img src="../../../assets/kymera.png" style="width: 100%; margin: 0px;">
+                    <mat-card-content style="padding: 0px 10px;">
+                        <p>
+                            <strong>Technologies:</strong> Angular 8, Angular Material, ASP.NET Core, Entity
+                            Framework
+                            <br />
+                            <strong>Laguages:</strong> HTML, SCSS, Typescript, C#
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions style="padding-bottom: 10px; padding-left: 20px;">
+                        <button mat-raised-button color="accent">SOURCE CODE</button>
+                        <button mat-raised-button color="accent">VIDEO DEMO</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+            <!--  -->
+
+            <div fxFlex="22" style="position: absolute" [@fade]=projectStatuses[3]>
+                <mat-card class="center_card">
+                    <mat-card-header style="padding: 0px 10px;">
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Kymera</mat-card-title>
+                        <mat-card-subtitle>Software Management Tool</mat-card-subtitle>
+                    </mat-card-header>
+                    <img src="../../../assets/poker.png"
+                        alt="Photo of a Shiba Inu" style="width: 100%; margin: 0px;">
+                    <mat-card-content style="padding: 0px 10px;">
+                        <p>
+                            <strong>Technologies:</strong> Angular 8, Angular Material, ASP.NET Core, Entity
+                            Framework
+                            <br />
+                            <strong>Laguages:</strong> HTML, SCSS, Typescript, C#
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions style="padding-bottom: 10px; padding-left: 20px;">
+                        <button mat-raised-button color="accent">LIKE</button>
+                        <button mat-raised-button color="accent">SHARE</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+            <!--  -->
+
+            <div fxFlex="22" style="position: absolute" [@fade]=projectStatuses[4]>
+                <mat-card class="center_card">
+                    <mat-card-header style="padding: 0px 10px;">
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Kymera</mat-card-title>
+                        <mat-card-subtitle>Software Management Tool</mat-card-subtitle>
+                    </mat-card-header>
+                    <img src="../../../assets/bst.png"
+                        alt="Photo of a Shiba Inu" style="width: 100%; margin: 0px;">
+                    <mat-card-content style="padding: 0px 10px;">
+                        <p>
+                            <strong>Technologies:</strong> Angular 8, Angular Material, ASP.NET Core, Entity
+                            Framework
+                            <br />
+                            <strong>Laguages:</strong> HTML, SCSS, Typescript, C#
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions style="padding-bottom: 10px; padding-left: 20px;">
+                        <button mat-raised-button color="accent">LIKE</button>
+                        <button mat-raised-button color="accent">SHARE</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+            <!--  -->
+            <div fxFlex="10" fxLayoutAlign="center center">
+                <button mat-fab style="background-color: grey;" (click)="swipeRight()">
+                    <mat-icon>arrow_forward_ios</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div *ngIf="selected.value === 1">
+            TAB 2
+        </div>
+        <div *ngIf="selected.value === 2" style="width: 100%; background-color: rgb(27, 79, 95); padding-top: 10px">
+            <pdf-viewer [src]="'../../../assets/ResumeWraithDylan.pdf'" [render-text]="true" style="display: block;">
+            </pdf-viewer>
+        </div>
+        <div *ngIf="selected.value === 3">
+            TAB 4
+        </div>
+    </div>
+</div>

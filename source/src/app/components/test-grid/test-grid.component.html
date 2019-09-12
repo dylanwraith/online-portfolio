@@ -1,0 +1,109 @@
+<div *ngIf="home" ng-keydown="arrowPressed($event)" style="height: 100%; width: 100%; background-color: black"
+    fxLayoutAlign="center center">
+    <div
+        style="height: 95vmin; width: 95vmin; background-image: url('../../../assets/town.PNG'); background-size: cover">
+        <img [@coordinates]="{value: spriteStatus, params: {x: xCoordinate * 100, y: yCoordinate * 100}}"
+            src={{spriteUrl}} style="height: calc(95vmin/14); width: calc(95vmin/14);">
+    </div>
+</div>
+<div *ngIf="resume" style="height: 100%; overflow: auto;">
+    <pdf-viewer [src]="'../../../assets/ResumeWraithDylan.pdf'" [render-text]="true">
+    </pdf-viewer>
+</div>
+<div *ngIf="projects" style="height: 100%; width: 100%;">
+    <app-projects></app-projects>
+</div>
+<div *ngIf="contact" style="height: 100%; width: 100%; background-color: #f9f9f9">
+    <div fxLayoutAlign="center center" style="height: 100%; width: 100%;">
+        <div *ngIf="(screenWidth > 700) && (screenHeight > 620); else smallScreen"
+            style="height: 70%; width: 90%; border: 1px solid #d8dee2; border-radius: 15px; overflow: auto; background-color: white"
+            class="mat-display-3">
+            <div style="margin-left: 10%; margin-top: 50px">Tell me what you think! :)</div>
+            <div fxLayout="row" fxLayoutAlign="start center"
+                style="width: 100%; padding-left: 10%; padding-right: 10%; padding-top: 50px" class="mat-h2">
+                <mat-form-field style="width: 45%;">
+                    <input id="name" required matInput placeholder="Enter name here" [(ngModel)]="name">
+                </mat-form-field>
+                <mat-form-field style="width: 45%; padding-left: 10%">
+                    <input id="email" required email matInput placeholder="Enter email here" [(ngModel)]="email">
+                </mat-form-field>
+            </div>
+            <div style="width: 80%; padding-left: 10%; padding-right: 10%;" class="mat-h2">
+                <mat-form-field style="width: 100%">
+                    <textarea id="message" required style="max-height: 150px" matInput placeholder="Enter message here"
+                        [(ngModel)]="message"></textarea>
+                </mat-form-field>
+            </div>
+            <div fxLayoutAlign=" center">
+                <button mat-raised-button style="margin-left: 10%; margin-right: 20px; background-color: lightgray;"
+                    class="mat-h2" (click)="sendEmail()" [disabled]=loading>Submit</button>
+                <mat-spinner *ngIf="loading" diameter="30"></mat-spinner>
+            </div>
+        </div>
+        <ng-template #smallScreen>
+            <div fxLayout="column" fxLayoutAlign="space-evenly center" style="height: 90%; width: 100%; margin-top: 8%">
+                <mat-form-field style="width: 80%;">
+                    <input required matInput placeholder="Enter name here" [(ngModel)]="name">
+                </mat-form-field>
+                <mat-form-field style="width: 80%;">
+                    <input required email matInput placeholder="Enter email here" [(ngModel)]="email">
+                </mat-form-field>
+                <div style="width: 80%;" class="mat-h2">
+                    <mat-form-field style="width: 100%">
+                        <textarea required style="max-height: 150px" matInput placeholder="Enter message here"
+                            [(ngModel)]="message"></textarea>
+                    </mat-form-field>
+                </div>
+                <div fxLayoutAlign=" center">
+                    <button mat-raised-button style="margin-left: 10%; background-color: lightgray;" class="mat-h2"
+                        (click)="sendEmail()" [disabled]=loading>Submit</button>
+                    <mat-spinner *ngIf="loading" diameter="30"></mat-spinner>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+</div>
+<div *ngIf="about">
+    projects!
+</div>
+<!-- <div *ngIf="interacted">
+    <audio id="player" autoplay controls style="display: none">
+        <source src="../../../assets/audio.mp3" type="audio/mp3"></audio>
+</div> -->
+<button *ngIf="resume" mat-raised-button
+    style="font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; position: absolute; top: 0; left: 0;"
+    (click)="leaveResume()">
+    <mat-icon style="font-size: 50px; height: 50px; width: 60px; color: white">meeting_room</mat-icon>
+    <img src="../../../assets/walk_left_sprite.PNG" style="height: 50px">
+</button>
+<button *ngIf="projects" mat-raised-button
+    style="font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; position: absolute; top: 0; left: 0;"
+    (click)="leaveProjects()">
+    <mat-icon style="font-size: 50px; height: 50px; width: 60px; color: white">meeting_room</mat-icon>
+    <img src="../../../assets/walk_left_sprite.PNG" style="height: 50px">
+</button>
+<button *ngIf="contact" mat-raised-button
+    style="font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; position: absolute; top: 0; left: 0;"
+    (click)="leaveContact()">
+    <mat-icon style="font-size: 50px; height: 50px; width: 60px; color: white">meeting_room</mat-icon>
+    <img src="../../../assets/walk_left_sprite.PNG" style="height: 50px">
+</button>
+<div *ngIf="home" style="bottom: 0; right: 0; width: 50vmin; opacity: 0.6; position: absolute;">
+    <img src="../../../assets/dpad.png" style="width: 100%">
+    <div style="position: absolute; height: 100%; width: 100%; top: 0" fxLayout="column">
+        <div style="height: 33%; width: 100%;" fxLayoutAlign="center center">
+            <div id="up" style="height: 100%; width: 33%;" (mousedown)="goUpClick()" (mouseup)="stop()"
+                (touchstart)="goUpClick()" (touchend)="stop()"></div>
+        </div>
+        <div style="height: 34%; width: 100%;" fxLayoutAlign="space-between center">
+            <div id="left" style="height: 100%; width: 33%;" (mousedown)="goLeftClick()" (mouseup)="stop()"
+                (touchstart)="goLeftClick()" (touchend)="stop()"></div>
+            <div id="right" style="height: 100%; width: 33%;" (mousedown)="goRightClick()" (mouseup)="stop()"
+                (touchstart)="goRightClick()" (touchend)="stop()"></div>
+        </div>
+        <div style="height: 33%; width: 100%;" fxLayoutAlign="center center">
+            <div id="down" style="height: 100%; width: 33%;" (mousedown)="goDownClick()" (mouseup)="stop()"
+                (touchstart)="goDownClick()" (touchend)="stop()"></div>
+        </div>
+    </div>
+</div>

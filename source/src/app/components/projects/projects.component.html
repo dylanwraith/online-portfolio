@@ -1,0 +1,170 @@
+<div *ngIf="(screenWidth > 760); else smallScreen" fxLayout="row" fxLayoutAlign="center center"
+    style="height: 100%; background-color: #f9f9f9">
+    <div fxFlex="10" fxLayoutAlign="center center">
+        <button mat-fab style="background-color: grey;" (click)="swipeLeft()">
+            <mat-icon style="margin-left: 8px;">arrow_back_ios</mat-icon>
+        </button>
+    </div>
+    <div fxFlex="80" style="height: 100%; position: relative;" fxLayoutAlign="center center">
+        <div fxFlex="22" style="position: absolute;" [@fade]=projectStatuses[0]>
+            <mat-card class="center_card">
+                <mat-card-header style="padding: 0px 10px;">
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Kymera</mat-card-title>
+                    <mat-card-subtitle>Software Management Tool</mat-card-subtitle>
+                </mat-card-header>
+                <img *ngIf="screenHeight > 560" src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                    alt="Photo of a Shiba Inu" style="width: 100%; margin: 0px; max-height: 200px">
+                <mat-card-content style="padding: 0px 10px;">
+                    <p>
+                        <strong>Technologies:</strong> Angular 8, Angular Material, ASP.NET Core, Entity
+                        Framework
+                        <br />
+                        <strong>Laguages:</strong> HTML, SCSS, Typescript, C#
+                    </p>
+                </mat-card-content>
+                <mat-card-actions style="padding-bottom: 10px;" fxLayout="column" fxLayoutAlign="center center">
+                    <button mat-raised-button color="accent" style="width: 80%; margin: 0">SOURCE CODE</button>
+                    <button mat-raised-button color="accent" style="width: 80%; margin: 0; margin-top: 10px">VIDEO
+                        DEMO</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex="22" style="position: absolute" [@fade]=projectStatuses[1]>
+            <mat-card class="center_card">
+                <mat-card-header style="padding: 0px 10px;">
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Kymera</mat-card-title>
+                    <mat-card-subtitle>Software Management Tool</mat-card-subtitle>
+                </mat-card-header>
+                <img *ngIf="screenHeight > 560" src="../../../assets/ems.png" alt="Photo of a Shiba Inu"
+                    style="width: 100%; margin: 0px; max-height: 200px">
+                <mat-card-content style="padding: 0px 10px;">
+                    <p>
+                        <strong>Technologies:</strong> Angular 8, Angular Material, ASP.NET Core, Entity
+                        Framework
+                        <br />
+                        <strong>Laguages:</strong> HTML, SCSS, Typescript, C#
+                    </p>
+                </mat-card-content>
+                <mat-card-actions style="padding-bottom: 10px;" fxLayout="column" fxLayoutAlign="center center">
+                    <button mat-raised-button color="accent" style="width: 80%; margin: 0">SOURCE CODE</button>
+                    <button mat-raised-button color="accent" style="width: 80%; margin: 0; margin-top: 10px">VIDEO
+                        DEMO</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex="22" style="position: absolute" [@fade]=projectStatuses[2]>
+            <mat-card class="center_card">
+                <mat-card-header style="padding: 0px 10px;">
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Kymera</mat-card-title>
+                    <mat-card-subtitle>Software Management Tool</mat-card-subtitle>
+                </mat-card-header>
+                <img *ngIf="screenHeight > 560" src="../../../assets/kymera.png"
+                    style="width: 100%; margin: 0px; max-height: 200px">
+                <mat-card-content style="padding: 0px 10px;">
+                    <p>
+                        <strong>Technologies:</strong> Angular 8, Angular Material, ASP.NET Core, Entity
+                        Framework
+                        <br />
+                        <strong>Laguages:</strong> HTML, SCSS, Typescript, C#
+                    </p>
+                </mat-card-content>
+                <mat-card-actions style="padding-bottom: 10px;" fxLayout="column" fxLayoutAlign="center center">
+                    <button mat-raised-button color="accent" style="width: 80%; margin: 0">SOURCE CODE</button>
+                    <button mat-raised-button color="accent" style="width: 80%; margin: 0; margin-top: 10px">VIDEO
+                        DEMO</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex="22" style="position: absolute" [@fade]=projectStatuses[3]>
+            <mat-card class="center_card">
+                <mat-card-header style="padding: 0px 10px;">
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Kymera</mat-card-title>
+                    <mat-card-subtitle>Software Management Tool</mat-card-subtitle>
+                </mat-card-header>
+                <img *ngIf="screenHeight > 560" src="../../../assets/poker.png" alt="Photo of a Shiba Inu"
+                    style="width: 100%; margin: 0px; max-height: 200px">
+                <mat-card-content style="padding: 0px 10px;">
+                    <p>
+                        <strong>Technologies:</strong> Angular 8, Angular Material, ASP.NET Core, Entity
+                        Framework
+                        <br />
+                        <strong>Laguages:</strong> HTML, SCSS, Typescript, C#
+                    </p>
+                </mat-card-content>
+                <mat-card-actions style="padding-bottom: 10px;" fxLayout="column" fxLayoutAlign="center center">
+                    <button mat-raised-button color="accent" style="width: 80%; margin: 0">SOURCE CODE</button>
+                    <button mat-raised-button color="accent" style="width: 80%; margin: 0; margin-top: 10px">VIDEO
+                        DEMO</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex="22" style="position: absolute" [@fade]=projectStatuses[4]>
+            <mat-card class="center_card">
+                <mat-card-header style="padding: 0px 10px;">
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>Kymera</mat-card-title>
+                    <mat-card-subtitle>Software Management Tool</mat-card-subtitle>
+                </mat-card-header>
+                <img *ngIf="screenHeight > 560" src="../../../assets/bst.png" alt="Photo of a Shiba Inu"
+                    style="width: 100%; margin: 0px; max-height: 200px">
+                <mat-card-content style="padding: 0px 10px;">
+                    <p>
+                        <strong>Software Stuff:</strong> Angular 8, Angular Material, ASP.NET Core, Entity
+                        Framework
+                        <br />
+                        <strong>Laguages:</strong> HTML, SCSS, Typescript, C#
+                    </p>
+                </mat-card-content>
+                <mat-card-actions style="padding-bottom: 10px;" fxLayout="column" fxLayoutAlign="center center">
+                    <button mat-raised-button color="accent" style="width: 80%; margin: 0">SOURCE CODE</button>
+                    <button mat-raised-button color="accent" style="width: 80%; margin: 0; margin-top: 10px">VIDEO
+                        DEMO</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+    <div fxFlex="10" fxLayoutAlign="center center">
+        <button mat-fab style="background-color: grey;" (click)="swipeRight()">
+            <mat-icon>arrow_forward_ios</mat-icon>
+        </button>
+    </div>
+</div>
+<ng-template #smallScreen>
+    <div style="height: 100%; background-color: #f9f9f9" fxLayoutAlign="space-between center">
+        <div fxFlex="20" fxLayoutAlign="center center">
+            <button mat-fab style="background-color: grey;" (click)="previous()">
+                <mat-icon style="margin-left: 8px;">arrow_back_ios</mat-icon>
+            </button>
+        </div>
+        <div fxFlex="60" fxLayoutAlign="center center" [@fade]=singleStatus>
+            <mat-card class="center_card">
+                <mat-card-header style="padding: 0px 10px;">
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>{{projects[index]}}</mat-card-title>
+                </mat-card-header>
+                <img [src]="images[index]" style="width: 100%; margin: 0px; max-height: 200px">
+                <mat-card-content style="padding: 0px 10px;">
+                    <p>
+                        <strong>Technologies:</strong> {{technologies[index]}}
+                        <br />
+                        <strong>Laguages:</strong> {{languages[index]}}
+                    </p>
+                </mat-card-content>
+                <mat-card-actions style="padding-bottom: 10px;" fxLayout="column" fxLayoutAlign="center center">
+                    <button mat-raised-button color="accent" style="width: 80%; margin: 0">SOURCE CODE</button>
+                    <button mat-raised-button color="accent" style="width: 80%; margin: 0; margin-top: 10px">VIDEO
+                        DEMO</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div fxFlex="20" fxLayoutAlign="center center">
+            <button mat-fab style="background-color: grey;" (click)="next()">
+                <mat-icon>arrow_forward_ios</mat-icon>
+            </button>
+        </div>
+    </div>
+</ng-template>

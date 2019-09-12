@@ -1,0 +1,4 @@
+::ng-deep .snackbarclass {
+    background-color: rgb(19, 199, 19);
+    font-weight: bold
+}
