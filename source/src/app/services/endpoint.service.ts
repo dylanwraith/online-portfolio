@@ -12,7 +12,7 @@ export class EndpointService {
   sendEmail(body: any) {
     console.log('sending email');
     console.log(JSON.parse(this.formatJsonString(body)));
-    return this.http.post('http://localhost:8000/api/email', JSON.parse(this.formatJsonString(body)));
+    return this.http.post('http://ec2-3-88-213-49.compute-1.amazonaws.com:8000/api/email', JSON.parse(this.formatJsonString(body)));
   }
 
   getAllCats(): Observable<any> {
