@@ -75,6 +75,7 @@ app.listen(8000, () => {
 
 //Send email
 app.route('/api/email').post((req, res) => {
+    console.log('sending email.\nsubject = ' + req.body.subject + '\ntext = ' + req.body.text)
     const newMessage = {
         to: 'dylanwraith@gmail.com',
         from: 'dylanwraith@gmail.com',
@@ -82,6 +83,8 @@ app.route('/api/email').post((req, res) => {
         text: ' ' + req.body.text,
         html: '<strong>' + req.body.text + '</strong>'
     };
+    console.log('message created. now sending')
     sgMail.send(newMessage);
+    console.log('message sent. returning status 201')
     res.status(201).send(req.body);
 })
