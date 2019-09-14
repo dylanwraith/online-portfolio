@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 //Sendgrid API setup
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey('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');
+sgMail.setApiKey('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');
 
 //Create server
 const app = express();
