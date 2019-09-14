@@ -30,7 +30,7 @@ app.use(function(req, res, next) {
 
 //Start server
 app.listen(8000, () => {
-    console.log('Server started!');
+    console.log('Server started and updated!');
 })
 
 // Start database
