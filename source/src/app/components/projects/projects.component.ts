@@ -162,8 +162,10 @@ export class ProjectsComponent implements OnInit {
 
   public githubs = [
     'asdf',
+    'https://github.com/dylanwraith/online-portfolio',
     'https://github.com/dylanwraith/employee-management-system',
-    ''
+    'https://github.com/dylanwraith/poker-game',
+    'https://github.com/dylanwraith/binary-search-tree'
   ];
 
   public projects = [
@@ -176,7 +178,7 @@ export class ProjectsComponent implements OnInit {
 
   public images = [
     '../../../assets/kymera.png',
-    'https://material.angular.io/assets/img/examples/shiba2.jpg',
+    '../../../assets/online-portfolio.PNG',
     '../../../assets/ems.png',
     '../../../assets/poker.png',
     '../../../assets/bst.png'
@@ -300,5 +302,9 @@ export class ProjectsComponent implements OnInit {
       }
       this.singleStatus = 'final';
     }, 250);
+  }
+
+  goToGithub(index) {
+    window.open(this.githubs[index]);
   }
 }

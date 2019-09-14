@@ -1,3 +1,35 @@
+<div *ngIf="resume" style="width: 100%; z-index: 10; position: fixed;  top: 0; left: 0;">
+    <button mat-raised-button
+        style="font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; margin-bottom: 20px;"
+        (click)="leaveResume()">
+        <mat-icon style="font-size: 50px; height: 50px; width: 60px; color: white">meeting_room</mat-icon>
+        <img src="../../../assets/walk_left_sprite.PNG" style="height: 50px">
+    </button>
+</div>
+<div *ngIf="projects" style="width: 100%; background-color: #f9f9f9; position: fixed;  top: 0; left: 0;">
+    <button mat-raised-button
+        style="font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; margin-bottom: 20px; position: absolute; top: 0; left: 0;"
+        (click)="leaveProjects()">
+        <mat-icon style="font-size: 50px; height: 50px; width: 60px; color: white">meeting_room</mat-icon>
+        <img src="../../../assets/walk_left_sprite.PNG" style="height: 50px">
+    </button>
+</div>
+<div *ngIf="contact" style="width: 100%; position: fixed;  top: 0; left: 0;">
+    <button mat-raised-button
+        style="font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; margin-bottom: 20px;"
+        (click)="leaveContact()">
+        <mat-icon style="font-size: 50px; height: 50px; width: 60px; color: white">meeting_room</mat-icon>
+        <img src="../../../assets/walk_left_sprite.PNG" style="height: 50px">
+    </button>
+</div>
+<div *ngIf="about" style="width: 100%; background-color: #f9f9f9; position: fixed;  top: 0; left: 0;">
+    <button mat-raised-button
+        style="font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; margin-bottom: 20px;"
+        (click)="leaveAbout()">
+        <mat-icon style="font-size: 50px; height: 50px; width: 60px; color: white">meeting_room</mat-icon>
+        <img src="../../../assets/walk_left_sprite.PNG" style="height: 50px">
+    </button>
+</div>
 <div *ngIf="home" ng-keydown="arrowPressed($event)" style="height: 100%; width: 100%; background-color: black"
     fxLayoutAlign="center center">
     <div
@@ -6,7 +38,7 @@
             src={{spriteUrl}} style="height: calc(95vmin/14); width: calc(95vmin/14);">
     </div>
 </div>
-<div *ngIf="resume" style="height: 100%; overflow: auto;">
+<div *ngIf="resume" style="height: 100%; overflow: auto; background-color: #f9f9f9;">
     <pdf-viewer [src]="'../../../assets/ResumeWraithDylan.pdf'" [render-text]="true">
     </pdf-viewer>
 </div>
@@ -41,7 +73,8 @@
             </div>
         </div>
         <ng-template #smallScreen>
-            <div fxLayout="column" fxLayoutAlign="space-evenly center" style="height: 90%; width: 100%; margin-top: 8%">
+            <div fxLayout="column" fxLayoutAlign="space-evenly center"
+                style="height: 90%; width: 100%; margin-top: 8%; background-color: #f9f9f9">
                 <mat-form-field style="width: 80%;">
                     <input required matInput placeholder="Enter name here" [(ngModel)]="name">
                 </mat-form-field>
@@ -63,31 +96,13 @@
         </ng-template>
     </div>
 </div>
-<div *ngIf="about">
-    projects!
+<div *ngIf="about" style="height: 100%; width: 100%">
+    <app-about-me></app-about-me>
 </div>
-<!-- <div *ngIf="interacted">
+<div *ngIf="interacted">
     <audio id="player" autoplay controls style="display: none">
-        <source src="../../../assets/audio.mp3" type="audio/mp3"></audio>
-</div> -->
-<button *ngIf="resume" mat-raised-button
-    style="font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; position: absolute; top: 0; left: 0;"
-    (click)="leaveResume()">
-    <mat-icon style="font-size: 50px; height: 50px; width: 60px; color: white">meeting_room</mat-icon>
-    <img src="../../../assets/walk_left_sprite.PNG" style="height: 50px">
-</button>
-<button *ngIf="projects" mat-raised-button
-    style="font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; position: absolute; top: 0; left: 0;"
-    (click)="leaveProjects()">
-    <mat-icon style="font-size: 50px; height: 50px; width: 60px; color: white">meeting_room</mat-icon>
-    <img src="../../../assets/walk_left_sprite.PNG" style="height: 50px">
-</button>
-<button *ngIf="contact" mat-raised-button
-    style="font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; position: absolute; top: 0; left: 0;"
-    (click)="leaveContact()">
-    <mat-icon style="font-size: 50px; height: 50px; width: 60px; color: white">meeting_room</mat-icon>
-    <img src="../../../assets/walk_left_sprite.PNG" style="height: 50px">
-</button>
+        <source src="../../../assets/song.mp3" type="audio/mp3"></audio>
+</div>
 <div *ngIf="home" style="bottom: 0; right: 0; width: 50vmin; opacity: 0.6; position: absolute;">
     <img src="../../../assets/dpad.png" style="width: 100%">
     <div style="position: absolute; height: 100%; width: 100%; top: 0" fxLayout="column">
@@ -107,3 +122,9 @@
         </div>
     </div>
 </div>
+<button mat-icon-button style="height: 75px; width: 75px; position: fixed; bottom: 0; left: 0">
+    <mat-icon *ngIf="interacted; else soundOff" (click)="audioClick()" style="height: 75px; width: 75px; line-height: 75px; font-size: 75px; color: #686868">volume_up</mat-icon>
+    <ng-template #soundOff>
+        <mat-icon (click)="audioClick()" style="height: 75px; width: 75px; line-height: 75px; font-size: 75px; color: #686868">volume_off</mat-icon>
+    </ng-template>
+</button>

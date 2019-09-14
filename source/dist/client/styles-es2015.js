@@ -338,7 +338,7 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\dw0519\Desktop\dylanwraith\source\client\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\dw0519\Desktop\dylanwraith\source\src\styles.css */"./src/styles.css");
 
 
 /***/ })

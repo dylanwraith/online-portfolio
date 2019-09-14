@@ -16,15 +16,19 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartUpComponent,
     TestGridComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutMeComponent
   ],
   imports: [
+    MatDividerModule,
     BrowserAnimationsModule,
     HttpClientModule,
     BrowserModule,

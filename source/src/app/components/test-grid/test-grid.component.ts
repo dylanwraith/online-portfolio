@@ -9,7 +9,6 @@ import {
 } from '@angular/animations';
 import { EndpointService } from 'src/app/services/endpoint.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-test-grid',
@@ -43,11 +42,11 @@ export class TestGridComponent implements OnInit {
   public spriteUrl = '../../../assets/forward_sprite.PNG';
   private animating = false;
   private stage = false;
-  public home = false;
+  public home = true;
   public projects = false;
   public resume = false;
   public about = false;
-  public contact = true;
+  public contact = false;
   public audio = new Audio();
   public interacted = false;
   public name;
@@ -67,10 +66,13 @@ export class TestGridComponent implements OnInit {
 
   ngOnInit() {}
 
+  audioClick() {
+    this.interacted = !this.interacted;
+  }
+
   // Check for arrow keys being pressed
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
-    this.interacted = true;
     if (!this.animating) {
       if (event.key === 'ArrowUp') {
         this.arrowUp();
@@ -167,6 +169,7 @@ export class TestGridComponent implements OnInit {
       this.walkUp();
     } else if (this.yCoordinate === 6 && this.xCoordinate === 2) {
       // Enter projects page
+      this.stop();
       this.yCoordinate--;
       this.spriteStatus === '1'
         ? (this.spriteStatus = '2')
@@ -178,6 +181,7 @@ export class TestGridComponent implements OnInit {
       }, 400);
     } else if (this.yCoordinate === 6 && this.xCoordinate === 10) {
       // Enter resume page
+      this.stop();
       this.yCoordinate--;
       this.spriteStatus === '1'
         ? (this.spriteStatus = '2')
@@ -189,6 +193,7 @@ export class TestGridComponent implements OnInit {
       }, 400);
     } else if (this.yCoordinate === 12 && this.xCoordinate === 2) {
       // Enter about me page
+      this.stop();
       this.yCoordinate--;
       this.spriteStatus === '1'
         ? (this.spriteStatus = '2')
@@ -200,6 +205,7 @@ export class TestGridComponent implements OnInit {
       }, 400);
     } else if (this.yCoordinate === 12 && this.xCoordinate === 10) {
       // Enter contact page
+      this.stop();
       this.yCoordinate--;
       this.spriteStatus === '1'
         ? (this.spriteStatus = '2')
@@ -303,6 +309,18 @@ export class TestGridComponent implements OnInit {
     }, 100);
   }
 
+  public leaveAbout() {
+    this.about = !this.about;
+    this.home = !this.home;
+    setTimeout(() => {
+      this.yCoordinate++;
+      this.spriteStatus === '1'
+        ? (this.spriteStatus = '2')
+        : (this.spriteStatus = '1');
+      this.walkDown();
+    }, 100);
+  }
+
   public sendEmail() {
     this.loading = true;
     const body = new Map<string, string>();
@@ -314,6 +332,7 @@ export class TestGridComponent implements OnInit {
       )
       .set('text', this.message);
     this.endpoint.sendEmail(body).subscribe(data => {
+      console.log(data);
       this.openSnackBar();
     });
   }
@@ -332,7 +351,6 @@ export class TestGridComponent implements OnInit {
   public goUpClick() {
     if (this.moving === null) {
       this.moving = setInterval(() => {
-        this.interacted = true;
         if (!this.animating) {
           this.arrowUp();
           console.log('going up');
@@ -344,7 +362,6 @@ export class TestGridComponent implements OnInit {
   public goRightClick() {
     if (this.moving === null) {
       this.moving = setInterval(() => {
-        this.interacted = true;
         if (!this.animating) {
           this.arrowRight();
           console.log('going right');
@@ -356,7 +373,6 @@ export class TestGridComponent implements OnInit {
   public goLeftClick() {
     if (this.moving === null) {
       this.moving = setInterval(() => {
-        this.interacted = true;
         if (!this.animating) {
           this.arrowLeft();
           console.log('going left');
@@ -368,7 +384,6 @@ export class TestGridComponent implements OnInit {
   public goDownClick() {
     if (this.moving === null) {
       this.moving = setInterval(() => {
-        this.interacted = true;
         if (!this.animating) {
           this.arrowDown();
           console.log('going down');

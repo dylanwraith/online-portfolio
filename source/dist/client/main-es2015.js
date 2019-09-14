@@ -32,7 +32,20 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-test-grid></app-test-grid>");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-test-grid style=\"user-select: none\"></app-test-grid>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/about-me/about-me.component.html":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/about-me/about-me.component.html ***!
+  \***************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div style=\"height: 100%; width: 100%; background-color: #f9f9f9; margin-top: 90px\">\n    <div fxLayoutAlign=\"center center\"><img src=\"../../../assets/face.PNG\" class=\"face\"></div>\n    <div fxLayout=\"column\" style=\"padding-top: 20px;\">\n        <div style=\"padding-left: 15%; padding-right: 15%;\">\n            <mat-divider></mat-divider>\n        </div>\n        <div style=\"background-color: #f9f9f9; width: 100%\">\n            <p class=\"mat-h1\" style=\"margin-bottom: 0px; margin-top: 8px; padding-left: 15%; padding-right: 15%;\">\n                About Me\n            </p>\n            <p class=\"mat-body\" style=\"padding-left: 15%; padding-right: 15%;\">\n                Hey there, my name is Dylan Wraith. I am an aspiring software engineer, and right now am\n                working part-time as a software engineer at Hologic Inc.\n                Currently I am finishing up my last year of undergrad at San Diego State University,\n                with a bachelor's degree in Computer Engineering. I am passionate in all things software and hardware,\n                but I am most fascinated by ground-breaking technologies. For my last year as an undergrad,\n                I am part of a team both designing and building a small-scale autonomous vehicle, a perfect\n                example of what I find interesting software-wise.\n            </p>\n            <div style=\"padding-left: 15%; padding-right: 15%;\">\n                <mat-divider></mat-divider>\n            </div>\n            <p class=\"mat-h1\" style=\"margin-bottom: 0px; margin-top: 8px; padding-left: 15%; padding-right: 15%;\">\n                Career Goals\n            </p>\n            <p class=\"mat-body\" style=\"padding-left: 15%; padding-right: 15%;\">\n                Currently I am looking for job opportunities post-graduation May 2020.\n                My dream job entails being part of a team working towards an end-goal that\n                will make a difference in society. After having worked in a software team at Hologic, I have found that\n                I prefer back-end over front-end, as I enjoy working with data structures and complex algorithms.\n                Ideally, I want a job that will constantly give me difficult problems that I must find solutions to,\n                because there is nothing I love more than solving problems.\n            </p>\n            <div style=\"padding-left: 15%; padding-right: 15%;\">\n                <mat-divider></mat-divider>\n            </div>\n            <p class=\"mat-h1\" style=\"margin-bottom: 0px; margin-top: 8px; padding-left: 15%; padding-right: 15%;\">\n                Extra Curricular\n            </p>\n            <p class=\"mat-body\" style=\"padding-left: 15%; padding-right: 15%;\">\n                Balance between work life and person life is a huge priority for me. Whether it\n                be playing video games (if you did not know, this UI is Pokemon 2nd Gen Themed),\n                surfing, or going out to socialize with coworkers and friends, I need to work at a company\n                that allows sufficient time for me to enjoy my life outside of work.\n            </p>\n        </div>\n    </div>\n</div>\n<div style=\"height: 100%; width: 100%; background-color: #f9f9f9; position: fixed\"></div>");
 
 /***/ }),
 
@@ -45,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"(screenWidth > 760); else smallScreen\" fxLayout=\"row\" fxLayoutAlign=\"center center\"\n    style=\"height: 100%; background-color: #f9f9f9\">\n    <div fxFlex=\"10\" fxLayoutAlign=\"center center\">\n        <button mat-fab style=\"background-color: grey;\" (click)=\"swipeLeft()\">\n            <mat-icon style=\"margin-left: 8px;\">arrow_back_ios</mat-icon>\n        </button>\n    </div>\n    <div fxFlex=\"80\" style=\"height: 100%; position: relative;\" fxLayoutAlign=\"center center\">\n        <div fxFlex=\"22\" style=\"position: absolute;\" [@fade]=projectStatuses[0]>\n            <mat-card class=\"center_card\">\n                <mat-card-header style=\"padding: 0px 10px;\">\n                    <div mat-card-avatar class=\"example-header-image\"></div>\n                    <mat-card-title>Kymera</mat-card-title>\n                    <mat-card-subtitle>Software Management Tool</mat-card-subtitle>\n                </mat-card-header>\n                <img *ngIf=\"screenHeight > 560\" src=\"https://material.angular.io/assets/img/examples/shiba2.jpg\"\n                    alt=\"Photo of a Shiba Inu\" style=\"width: 100%; margin: 0px; max-height: 200px\">\n                <mat-card-content style=\"padding: 0px 10px;\">\n                    <p>\n                        <strong>Technologies:</strong> Angular 8, Angular Material, ASP.NET Core, Entity\n                        Framework\n                        <br />\n                        <strong>Laguages:</strong> HTML, SCSS, Typescript, C#\n                    </p>\n                </mat-card-content>\n                <mat-card-actions style=\"padding-bottom: 10px;\" fxLayout=\"column\" fxLayoutAlign=\"center center\">\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0\">SOURCE CODE</button>\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0; margin-top: 10px\">VIDEO\n                        DEMO</button>\n                </mat-card-actions>\n            </mat-card>\n        </div>\n        <div fxFlex=\"22\" style=\"position: absolute\" [@fade]=projectStatuses[1]>\n            <mat-card class=\"center_card\">\n                <mat-card-header style=\"padding: 0px 10px;\">\n                    <div mat-card-avatar class=\"example-header-image\"></div>\n                    <mat-card-title>Kymera</mat-card-title>\n                    <mat-card-subtitle>Software Management Tool</mat-card-subtitle>\n                </mat-card-header>\n                <img *ngIf=\"screenHeight > 560\" src=\"../../../assets/ems.png\" alt=\"Photo of a Shiba Inu\"\n                    style=\"width: 100%; margin: 0px; max-height: 200px\">\n                <mat-card-content style=\"padding: 0px 10px;\">\n                    <p>\n                        <strong>Technologies:</strong> Angular 8, Angular Material, ASP.NET Core, Entity\n                        Framework\n                        <br />\n                        <strong>Laguages:</strong> HTML, SCSS, Typescript, C#\n                    </p>\n                </mat-card-content>\n                <mat-card-actions style=\"padding-bottom: 10px;\" fxLayout=\"column\" fxLayoutAlign=\"center center\">\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0\">SOURCE CODE</button>\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0; margin-top: 10px\">VIDEO\n                        DEMO</button>\n                </mat-card-actions>\n            </mat-card>\n        </div>\n        <div fxFlex=\"22\" style=\"position: absolute\" [@fade]=projectStatuses[2]>\n            <mat-card class=\"center_card\">\n                <mat-card-header style=\"padding: 0px 10px;\">\n                    <div mat-card-avatar class=\"example-header-image\"></div>\n                    <mat-card-title>Kymera</mat-card-title>\n                    <mat-card-subtitle>Software Management Tool</mat-card-subtitle>\n                </mat-card-header>\n                <img *ngIf=\"screenHeight > 560\" src=\"../../../assets/kymera.png\"\n                    style=\"width: 100%; margin: 0px; max-height: 200px\">\n                <mat-card-content style=\"padding: 0px 10px;\">\n                    <p>\n                        <strong>Technologies:</strong> Angular 8, Angular Material, ASP.NET Core, Entity\n                        Framework\n                        <br />\n                        <strong>Laguages:</strong> HTML, SCSS, Typescript, C#\n                    </p>\n                </mat-card-content>\n                <mat-card-actions style=\"padding-bottom: 10px;\" fxLayout=\"column\" fxLayoutAlign=\"center center\">\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0\">SOURCE CODE</button>\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0; margin-top: 10px\">VIDEO\n                        DEMO</button>\n                </mat-card-actions>\n            </mat-card>\n        </div>\n        <div fxFlex=\"22\" style=\"position: absolute\" [@fade]=projectStatuses[3]>\n            <mat-card class=\"center_card\">\n                <mat-card-header style=\"padding: 0px 10px;\">\n                    <div mat-card-avatar class=\"example-header-image\"></div>\n                    <mat-card-title>Kymera</mat-card-title>\n                    <mat-card-subtitle>Software Management Tool</mat-card-subtitle>\n                </mat-card-header>\n                <img *ngIf=\"screenHeight > 560\" src=\"../../../assets/poker.png\" alt=\"Photo of a Shiba Inu\"\n                    style=\"width: 100%; margin: 0px; max-height: 200px\">\n                <mat-card-content style=\"padding: 0px 10px;\">\n                    <p>\n                        <strong>Technologies:</strong> Angular 8, Angular Material, ASP.NET Core, Entity\n                        Framework\n                        <br />\n                        <strong>Laguages:</strong> HTML, SCSS, Typescript, C#\n                    </p>\n                </mat-card-content>\n                <mat-card-actions style=\"padding-bottom: 10px;\" fxLayout=\"column\" fxLayoutAlign=\"center center\">\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0\">SOURCE CODE</button>\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0; margin-top: 10px\">VIDEO\n                        DEMO</button>\n                </mat-card-actions>\n            </mat-card>\n        </div>\n        <div fxFlex=\"22\" style=\"position: absolute\" [@fade]=projectStatuses[4]>\n            <mat-card class=\"center_card\">\n                <mat-card-header style=\"padding: 0px 10px;\">\n                    <div mat-card-avatar class=\"example-header-image\"></div>\n                    <mat-card-title>Kymera</mat-card-title>\n                    <mat-card-subtitle>Software Management Tool</mat-card-subtitle>\n                </mat-card-header>\n                <img *ngIf=\"screenHeight > 560\" src=\"../../../assets/bst.png\" alt=\"Photo of a Shiba Inu\"\n                    style=\"width: 100%; margin: 0px; max-height: 200px\">\n                <mat-card-content style=\"padding: 0px 10px;\">\n                    <p>\n                        <strong>Software Stuff:</strong> Angular 8, Angular Material, ASP.NET Core, Entity\n                        Framework\n                        <br />\n                        <strong>Laguages:</strong> HTML, SCSS, Typescript, C#\n                    </p>\n                </mat-card-content>\n                <mat-card-actions style=\"padding-bottom: 10px;\" fxLayout=\"column\" fxLayoutAlign=\"center center\">\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0\">SOURCE CODE</button>\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0; margin-top: 10px\">VIDEO\n                        DEMO</button>\n                </mat-card-actions>\n            </mat-card>\n        </div>\n    </div>\n    <div fxFlex=\"10\" fxLayoutAlign=\"center center\">\n        <button mat-fab style=\"background-color: grey;\" (click)=\"swipeRight()\">\n            <mat-icon>arrow_forward_ios</mat-icon>\n        </button>\n    </div>\n</div>\n<ng-template #smallScreen>\n    <div style=\"height: 100%; background-color: #f9f9f9\" fxLayoutAlign=\"space-between center\">\n        <div fxFlex=\"20\" fxLayoutAlign=\"center center\">\n            <button mat-fab style=\"background-color: grey;\" (click)=\"previous()\">\n                <mat-icon style=\"margin-left: 8px;\">arrow_back_ios</mat-icon>\n            </button>\n        </div>\n        <div fxFlex=\"60\" fxLayoutAlign=\"center center\" [@fade]=singleStatus>\n            <mat-card class=\"center_card\">\n                <mat-card-header style=\"padding: 0px 10px;\">\n                    <div mat-card-avatar class=\"example-header-image\"></div>\n                    <mat-card-title>{{projects[index]}}</mat-card-title>\n                </mat-card-header>\n                <img [src]=\"images[index]\" style=\"width: 100%; margin: 0px; max-height: 200px\">\n                <mat-card-content style=\"padding: 0px 10px;\">\n                    <p>\n                        <strong>Technologies:</strong> {{technologies[index]}}\n                        <br />\n                        <strong>Laguages:</strong> {{languages[index]}}\n                    </p>\n                </mat-card-content>\n                <mat-card-actions style=\"padding-bottom: 10px;\" fxLayout=\"column\" fxLayoutAlign=\"center center\">\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0\">SOURCE CODE</button>\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0; margin-top: 10px\">VIDEO\n                        DEMO</button>\n                </mat-card-actions>\n            </mat-card>\n        </div>\n        <div fxFlex=\"20\" fxLayoutAlign=\"center center\">\n            <button mat-fab style=\"background-color: grey;\" (click)=\"next()\">\n                <mat-icon>arrow_forward_ios</mat-icon>\n            </button>\n        </div>\n    </div>\n</ng-template>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"(screenWidth > 760 && screenHeight > 400); else smallScreen\" fxLayout=\"row\" fxLayoutAlign=\"center center\"\n    style=\"height: 100%; background-color: #f9f9f9\">\n    <div fxFlex=\"10\" fxLayoutAlign=\"center center\">\n        <button mat-fab style=\"background-color: grey;\" (click)=\"swipeLeft()\">\n            <mat-icon style=\"margin-left: 8px;\">arrow_back_ios</mat-icon>\n        </button>\n    </div>\n    <div fxFlex=\"80\" style=\"height: 100%; position: relative;\" fxLayoutAlign=\"center center\">\n        <div fxFlex=\"22\" style=\"position: absolute;\" [@fade]=projectStatuses[0]>\n            <mat-card class=\"center_card\">\n                <mat-card-header style=\"padding: 0px 10px;\">\n                    <mat-card-title>Pokemon</mat-card-title>\n                    <mat-card-subtitle>{{projects[1]}}</mat-card-subtitle>\n                </mat-card-header>\n                <img *ngIf=\"screenHeight > 560\" src=\"../../../assets/online-portfolio.PNG\"\n                    alt=\"Photo of a Shiba Inu\" style=\"width: 100%; margin: 0px; max-height: 200px\">\n                <mat-card-content style=\"padding: 0px 10px;\">\n                    <p>\n                        <strong>Technologies:</strong> {{technologies[1]}}\n                        <br />\n                        <strong>Laguages:</strong> {{languages[1]}}\n                    </p>\n                </mat-card-content>\n                <mat-card-actions style=\"padding-bottom: 10px;\" fxLayout=\"column\" fxLayoutAlign=\"center center\">\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0\"\n                        (click)=\"goToGithub(1)\">SOURCE CODE</button>\n                </mat-card-actions>\n            </mat-card>\n        </div>\n        <div fxFlex=\"22\" style=\"position: absolute\" [@fade]=projectStatuses[1]>\n            <mat-card class=\"center_card\">\n                <mat-card-header style=\"padding: 0px 10px;\">\n                    <mat-card-title>EMS</mat-card-title>\n                    <mat-card-subtitle>{{projects[2]}}</mat-card-subtitle>\n                </mat-card-header>\n                <img *ngIf=\"screenHeight > 560\" src=\"../../../assets/ems.png\" alt=\"Photo of a Shiba Inu\"\n                    style=\"width: 100%; margin: 0px; max-height: 200px\">\n                <mat-card-content style=\"padding: 0px 10px;\">\n                    <p>\n                        <strong>Technologies:</strong> {{technologies[2]}}\n                        <br />\n                        <strong>Laguages:</strong> {{languages[2]}}\n                    </p>\n                </mat-card-content>\n                <mat-card-actions style=\"padding-bottom: 10px;\" fxLayout=\"column\" fxLayoutAlign=\"center center\">\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0\"\n                        (click)=\"goToGithub(2)\">SOURCE CODE</button>\n                </mat-card-actions>\n            </mat-card>\n        </div>\n        <div fxFlex=\"22\" style=\"position: absolute\" [@fade]=projectStatuses[2]>\n            <mat-card class=\"center_card\">\n                <mat-card-header style=\"padding: 0px 10px;\">\n                    <mat-card-title>Kymera</mat-card-title>\n                    <mat-card-subtitle>{{projects[0]}}</mat-card-subtitle>\n                </mat-card-header>\n                <img *ngIf=\"screenHeight > 560\" src=\"../../../assets/kymera.png\"\n                    style=\"width: 100%; margin: 0px; max-height: 200px\">\n                <mat-card-content style=\"padding: 0px 10px;\">\n                    <p>\n                        <strong>Technologies:</strong> {{technologies[0]}}\n                        <br />\n                        <strong>Laguages:</strong> {{languages[0]}}\n                    </p>\n                </mat-card-content>\n                <mat-card-actions style=\"padding-bottom: 10px;\" fxLayout=\"column\" fxLayoutAlign=\"center center\">\n                </mat-card-actions>\n            </mat-card>\n        </div>\n        <div fxFlex=\"22\" style=\"position: absolute\" [@fade]=projectStatuses[3]>\n            <mat-card class=\"center_card\">\n                <mat-card-header style=\"padding: 0px 10px;\">\n                    <mat-card-title>Poker</mat-card-title>\n                    <mat-card-subtitle>{{projects[3]}}</mat-card-subtitle>\n                </mat-card-header>\n                <img *ngIf=\"screenHeight > 560\" src=\"../../../assets/poker.png\" alt=\"Photo of a Shiba Inu\"\n                    style=\"width: 100%; margin: 0px; max-height: 200px\">\n                <mat-card-content style=\"padding: 0px 10px;\">\n                    <p>\n                        <strong>Technologies:</strong> {{technologies[3]}}\n                        <br />\n                        <strong>Laguages:</strong> {{languages[3]}}\n                    </p>\n                </mat-card-content>\n                <mat-card-actions style=\"padding-bottom: 10px;\" fxLayout=\"column\" fxLayoutAlign=\"center center\">\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0\"\n                        (click)=\"goToGithub(3)\">SOURCE CODE</button>\n                </mat-card-actions>\n            </mat-card>\n        </div>\n        <div fxFlex=\"22\" style=\"position: absolute\" [@fade]=projectStatuses[4]>\n            <mat-card class=\"center_card\">\n                <mat-card-header style=\"padding: 0px 10px;\">\n                    <mat-card-title>BST</mat-card-title>\n                    <mat-card-subtitle>{{projects[4]}}</mat-card-subtitle>\n                </mat-card-header>\n                <img *ngIf=\"screenHeight > 560\" src=\"../../../assets/bst.png\" alt=\"Photo of a Shiba Inu\"\n                    style=\"width: 100%; margin: 0px; max-height: 200px\">\n                <mat-card-content style=\"padding: 0px 10px;\">\n                    <p>\n                        <strong>Software Stuff:</strong> {{technologies[4]}}\n                        <br />\n                        <strong>Laguages:</strong> {{languages[4]}}\n                    </p>\n                </mat-card-content>\n                <mat-card-actions style=\"padding-bottom: 10px;\" fxLayout=\"column\" fxLayoutAlign=\"center center\">\n                    <button mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0\"\n                        (click)=\"goToGithub(4)\">SOURCE CODE</button>\n                </mat-card-actions>\n            </mat-card>\n        </div>\n    </div>\n    <div fxFlex=\"10\" fxLayoutAlign=\"center center\">\n        <button mat-fab style=\"background-color: grey;\" (click)=\"swipeRight()\">\n            <mat-icon>arrow_forward_ios</mat-icon>\n        </button>\n    </div>\n</div>\n<ng-template #smallScreen>\n    <div style=\"height: 100%; background-color: #f9f9f9\" fxLayoutAlign=\"space-between center\">\n        <div fxFlex=\"20\" fxLayoutAlign=\"center center\">\n            <button mat-fab style=\"background-color: grey;\" (click)=\"previous()\">\n                <mat-icon style=\"margin-left: 8px;\">arrow_back_ios</mat-icon>\n            </button>\n        </div>\n        <div fxFlex=\"60\" fxLayoutAlign=\"center center\" [@fade]=singleStatus>\n            <mat-card class=\"center_card\">\n                <mat-card-header style=\"padding: 0px 10px;\">\n                    <mat-card-title>{{projects[index]}}</mat-card-title>\n                </mat-card-header>\n                <img *ngIf=\"screenHeight > 560\" [src]=\"images[index]\"\n                    style=\"width: 100%; margin: 0px; max-height: 200px\">\n                <mat-card-content style=\"padding: 0px 10px;\">\n                    <p>\n                        <strong>Technologies:</strong> {{technologies[index]}}\n                        <br />\n                        <strong>Laguages:</strong> {{languages[index]}}\n                    </p>\n                </mat-card-content>\n                <mat-card-actions style=\"padding-bottom: 10px;\" fxLayout=\"column\" fxLayoutAlign=\"center center\">\n                    <button *ngIf=\"index !== 0\" mat-raised-button color=\"accent\" style=\"width: 80%; margin: 0\"\n                        (click)=\"goToGithub(index)\">SOURCE CODE</button>\n                </mat-card-actions>\n            </mat-card>\n        </div>\n        <div fxFlex=\"20\" fxLayoutAlign=\"center center\">\n            <button mat-fab style=\"background-color: grey;\" (click)=\"next()\">\n                <mat-icon>arrow_forward_ios</mat-icon>\n            </button>\n        </div>\n    </div>\n</ng-template>");
 
 /***/ }),
 
@@ -71,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"home\" ng-keydown=\"arrowPressed($event)\" style=\"height: 100%; width: 100%; background-color: black\"\n    fxLayoutAlign=\"center center\">\n    <div\n        style=\"height: 95vmin; width: 95vmin; background-image: url('../../../assets/town.PNG'); background-size: cover\">\n        <img [@coordinates]=\"{value: spriteStatus, params: {x: xCoordinate * 100, y: yCoordinate * 100}}\"\n            src={{spriteUrl}} style=\"height: calc(95vmin/14); width: calc(95vmin/14);\">\n    </div>\n</div>\n<div *ngIf=\"resume\" style=\"height: 100%; overflow: auto;\">\n    <pdf-viewer [src]=\"'../../../assets/ResumeWraithDylan.pdf'\" [render-text]=\"true\">\n    </pdf-viewer>\n</div>\n<div *ngIf=\"projects\" style=\"height: 100%; width: 100%;\">\n    <app-projects></app-projects>\n</div>\n<div *ngIf=\"contact\" style=\"height: 100%; width: 100%; background-color: #f9f9f9\">\n    <div fxLayoutAlign=\"center center\" style=\"height: 100%; width: 100%;\">\n        <div *ngIf=\"(screenWidth > 700) && (screenHeight > 620); else smallScreen\"\n            style=\"height: 70%; width: 90%; border: 1px solid #d8dee2; border-radius: 15px; overflow: auto; background-color: white\"\n            class=\"mat-display-3\">\n            <div style=\"margin-left: 10%; margin-top: 50px\">Tell me what you think! :)</div>\n            <div fxLayout=\"row\" fxLayoutAlign=\"start center\"\n                style=\"width: 100%; padding-left: 10%; padding-right: 10%; padding-top: 50px\" class=\"mat-h2\">\n                <mat-form-field style=\"width: 45%;\">\n                    <input id=\"name\" required matInput placeholder=\"Enter name here\" [(ngModel)]=\"name\">\n                </mat-form-field>\n                <mat-form-field style=\"width: 45%; padding-left: 10%\">\n                    <input id=\"email\" required email matInput placeholder=\"Enter email here\" [(ngModel)]=\"email\">\n                </mat-form-field>\n            </div>\n            <div style=\"width: 80%; padding-left: 10%; padding-right: 10%;\" class=\"mat-h2\">\n                <mat-form-field style=\"width: 100%\">\n                    <textarea id=\"message\" required style=\"max-height: 150px\" matInput placeholder=\"Enter message here\"\n                        [(ngModel)]=\"message\"></textarea>\n                </mat-form-field>\n            </div>\n            <div fxLayoutAlign=\" center\">\n                <button mat-raised-button style=\"margin-left: 10%; margin-right: 20px; background-color: lightgray;\"\n                    class=\"mat-h2\" (click)=\"sendEmail()\" [disabled]=loading>Submit</button>\n                <mat-spinner *ngIf=\"loading\" diameter=\"30\"></mat-spinner>\n            </div>\n        </div>\n        <ng-template #smallScreen>\n            <div fxLayout=\"column\" fxLayoutAlign=\"space-evenly center\" style=\"height: 90%; width: 100%; margin-top: 8%\">\n                <mat-form-field style=\"width: 80%;\">\n                    <input required matInput placeholder=\"Enter name here\" [(ngModel)]=\"name\">\n                </mat-form-field>\n                <mat-form-field style=\"width: 80%;\">\n                    <input required email matInput placeholder=\"Enter email here\" [(ngModel)]=\"email\">\n                </mat-form-field>\n                <div style=\"width: 80%;\" class=\"mat-h2\">\n                    <mat-form-field style=\"width: 100%\">\n                        <textarea required style=\"max-height: 150px\" matInput placeholder=\"Enter message here\"\n                            [(ngModel)]=\"message\"></textarea>\n                    </mat-form-field>\n                </div>\n                <div fxLayoutAlign=\" center\">\n                    <button mat-raised-button style=\"margin-left: 10%; background-color: lightgray;\" class=\"mat-h2\"\n                        (click)=\"sendEmail()\" [disabled]=loading>Submit</button>\n                    <mat-spinner *ngIf=\"loading\" diameter=\"30\"></mat-spinner>\n                </div>\n            </div>\n        </ng-template>\n    </div>\n</div>\n<div *ngIf=\"about\">\n    projects!\n</div>\n<!-- <div *ngIf=\"interacted\">\n    <audio id=\"player\" autoplay controls style=\"display: none\">\n        <source src=\"../../../assets/audio.mp3\" type=\"audio/mp3\"></audio>\n</div> -->\n<button *ngIf=\"resume\" mat-raised-button\n    style=\"font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; position: absolute; top: 0; left: 0;\"\n    (click)=\"leaveResume()\">\n    <mat-icon style=\"font-size: 50px; height: 50px; width: 60px; color: white\">meeting_room</mat-icon>\n    <img src=\"../../../assets/walk_left_sprite.PNG\" style=\"height: 50px\">\n</button>\n<button *ngIf=\"projects\" mat-raised-button\n    style=\"font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; position: absolute; top: 0; left: 0;\"\n    (click)=\"leaveProjects()\">\n    <mat-icon style=\"font-size: 50px; height: 50px; width: 60px; color: white\">meeting_room</mat-icon>\n    <img src=\"../../../assets/walk_left_sprite.PNG\" style=\"height: 50px\">\n</button>\n<button *ngIf=\"contact\" mat-raised-button\n    style=\"font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; position: absolute; top: 0; left: 0;\"\n    (click)=\"leaveContact()\">\n    <mat-icon style=\"font-size: 50px; height: 50px; width: 60px; color: white\">meeting_room</mat-icon>\n    <img src=\"../../../assets/walk_left_sprite.PNG\" style=\"height: 50px\">\n</button>\n<div *ngIf=\"home\" style=\"bottom: 0; right: 0; width: 50vmin; opacity: 0.6; position: absolute;\">\n    <img src=\"../../../assets/dpad.png\" style=\"width: 100%\">\n    <div style=\"position: absolute; height: 100%; width: 100%; top: 0\" fxLayout=\"column\">\n        <div style=\"height: 33%; width: 100%;\" fxLayoutAlign=\"center center\">\n            <div id=\"up\" style=\"height: 100%; width: 33%;\" (mousedown)=\"goUpClick()\" (mouseup)=\"stop()\"\n                (touchstart)=\"goUpClick()\" (touchend)=\"stop()\"></div>\n        </div>\n        <div style=\"height: 34%; width: 100%;\" fxLayoutAlign=\"space-between center\">\n            <div id=\"left\" style=\"height: 100%; width: 33%;\" (mousedown)=\"goLeftClick()\" (mouseup)=\"stop()\"\n                (touchstart)=\"goLeftClick()\" (touchend)=\"stop()\"></div>\n            <div id=\"right\" style=\"height: 100%; width: 33%;\" (mousedown)=\"goRightClick()\" (mouseup)=\"stop()\"\n                (touchstart)=\"goRightClick()\" (touchend)=\"stop()\"></div>\n        </div>\n        <div style=\"height: 33%; width: 100%;\" fxLayoutAlign=\"center center\">\n            <div id=\"down\" style=\"height: 100%; width: 33%;\" (mousedown)=\"goDownClick()\" (mouseup)=\"stop()\"\n                (touchstart)=\"goDownClick()\" (touchend)=\"stop()\"></div>\n        </div>\n    </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"resume\" style=\"width: 100%; z-index: 10; position: fixed;  top: 0; left: 0;\">\n    <button mat-raised-button\n        style=\"font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; margin-bottom: 20px;\"\n        (click)=\"leaveResume()\">\n        <mat-icon style=\"font-size: 50px; height: 50px; width: 60px; color: white\">meeting_room</mat-icon>\n        <img src=\"../../../assets/walk_left_sprite.PNG\" style=\"height: 50px\">\n    </button>\n</div>\n<div *ngIf=\"projects\" style=\"width: 100%; background-color: #f9f9f9; position: fixed;  top: 0; left: 0;\">\n    <button mat-raised-button\n        style=\"font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; margin-bottom: 20px; position: absolute; top: 0; left: 0;\"\n        (click)=\"leaveProjects()\">\n        <mat-icon style=\"font-size: 50px; height: 50px; width: 60px; color: white\">meeting_room</mat-icon>\n        <img src=\"../../../assets/walk_left_sprite.PNG\" style=\"height: 50px\">\n    </button>\n</div>\n<div *ngIf=\"contact\" style=\"width: 100%; position: fixed;  top: 0; left: 0;\">\n    <button mat-raised-button\n        style=\"font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; margin-bottom: 20px;\"\n        (click)=\"leaveContact()\">\n        <mat-icon style=\"font-size: 50px; height: 50px; width: 60px; color: white\">meeting_room</mat-icon>\n        <img src=\"../../../assets/walk_left_sprite.PNG\" style=\"height: 50px\">\n    </button>\n</div>\n<div *ngIf=\"about\" style=\"width: 100%; background-color: #f9f9f9; position: fixed;  top: 0; left: 0;\">\n    <button mat-raised-button\n        style=\"font-size: 50px; background-color: red; margin-left: 20px; margin-top: 20px; margin-bottom: 20px;\"\n        (click)=\"leaveAbout()\">\n        <mat-icon style=\"font-size: 50px; height: 50px; width: 60px; color: white\">meeting_room</mat-icon>\n        <img src=\"../../../assets/walk_left_sprite.PNG\" style=\"height: 50px\">\n    </button>\n</div>\n<div *ngIf=\"home\" ng-keydown=\"arrowPressed($event)\" style=\"height: 100%; width: 100%; background-color: black\"\n    fxLayoutAlign=\"center center\">\n    <div\n        style=\"height: 95vmin; width: 95vmin; background-image: url('../../../assets/town.PNG'); background-size: cover\">\n        <img [@coordinates]=\"{value: spriteStatus, params: {x: xCoordinate * 100, y: yCoordinate * 100}}\"\n            src={{spriteUrl}} style=\"height: calc(95vmin/14); width: calc(95vmin/14);\">\n    </div>\n</div>\n<div *ngIf=\"resume\" style=\"height: 100%; overflow: auto; background-color: #f9f9f9;\">\n    <pdf-viewer [src]=\"'../../../assets/ResumeWraithDylan.pdf'\" [render-text]=\"true\">\n    </pdf-viewer>\n</div>\n<div *ngIf=\"projects\" style=\"height: 100%; width: 100%;\">\n    <app-projects></app-projects>\n</div>\n<div *ngIf=\"contact\" style=\"height: 100%; width: 100%; background-color: #f9f9f9\">\n    <div fxLayoutAlign=\"center center\" style=\"height: 100%; width: 100%;\">\n        <div *ngIf=\"(screenWidth > 700) && (screenHeight > 620); else smallScreen\"\n            style=\"height: 70%; width: 90%; border: 1px solid #d8dee2; border-radius: 15px; overflow: auto; background-color: white\"\n            class=\"mat-display-3\">\n            <div style=\"margin-left: 10%; margin-top: 50px\">Tell me what you think! :)</div>\n            <div fxLayout=\"row\" fxLayoutAlign=\"start center\"\n                style=\"width: 100%; padding-left: 10%; padding-right: 10%; padding-top: 50px\" class=\"mat-h2\">\n                <mat-form-field style=\"width: 45%;\">\n                    <input id=\"name\" required matInput placeholder=\"Enter name here\" [(ngModel)]=\"name\">\n                </mat-form-field>\n                <mat-form-field style=\"width: 45%; padding-left: 10%\">\n                    <input id=\"email\" required email matInput placeholder=\"Enter email here\" [(ngModel)]=\"email\">\n                </mat-form-field>\n            </div>\n            <div style=\"width: 80%; padding-left: 10%; padding-right: 10%;\" class=\"mat-h2\">\n                <mat-form-field style=\"width: 100%\">\n                    <textarea id=\"message\" required style=\"max-height: 150px\" matInput placeholder=\"Enter message here\"\n                        [(ngModel)]=\"message\"></textarea>\n                </mat-form-field>\n            </div>\n            <div fxLayoutAlign=\" center\">\n                <button mat-raised-button style=\"margin-left: 10%; margin-right: 20px; background-color: lightgray;\"\n                    class=\"mat-h2\" (click)=\"sendEmail()\" [disabled]=loading>Submit</button>\n                <mat-spinner *ngIf=\"loading\" diameter=\"30\"></mat-spinner>\n            </div>\n        </div>\n        <ng-template #smallScreen>\n            <div fxLayout=\"column\" fxLayoutAlign=\"space-evenly center\"\n                style=\"height: 90%; width: 100%; margin-top: 8%; background-color: #f9f9f9\">\n                <mat-form-field style=\"width: 80%;\">\n                    <input required matInput placeholder=\"Enter name here\" [(ngModel)]=\"name\">\n                </mat-form-field>\n                <mat-form-field style=\"width: 80%;\">\n                    <input required email matInput placeholder=\"Enter email here\" [(ngModel)]=\"email\">\n                </mat-form-field>\n                <div style=\"width: 80%;\" class=\"mat-h2\">\n                    <mat-form-field style=\"width: 100%\">\n                        <textarea required style=\"max-height: 150px\" matInput placeholder=\"Enter message here\"\n                            [(ngModel)]=\"message\"></textarea>\n                    </mat-form-field>\n                </div>\n                <div fxLayoutAlign=\" center\">\n                    <button mat-raised-button style=\"margin-left: 10%; background-color: lightgray;\" class=\"mat-h2\"\n                        (click)=\"sendEmail()\" [disabled]=loading>Submit</button>\n                    <mat-spinner *ngIf=\"loading\" diameter=\"30\"></mat-spinner>\n                </div>\n            </div>\n        </ng-template>\n    </div>\n</div>\n<div *ngIf=\"about\" style=\"height: 100%; width: 100%\">\n    <app-about-me></app-about-me>\n</div>\n<div *ngIf=\"interacted\">\n    <audio id=\"player\" autoplay controls style=\"display: none\">\n        <source src=\"../../../assets/song.mp3\" type=\"audio/mp3\"></audio>\n</div>\n<div *ngIf=\"home\" style=\"bottom: 0; right: 0; width: 50vmin; opacity: 0.6; position: absolute;\">\n    <img src=\"../../../assets/dpad.png\" style=\"width: 100%\">\n    <div style=\"position: absolute; height: 100%; width: 100%; top: 0\" fxLayout=\"column\">\n        <div style=\"height: 33%; width: 100%;\" fxLayoutAlign=\"center center\">\n            <div id=\"up\" style=\"height: 100%; width: 33%;\" (mousedown)=\"goUpClick()\" (mouseup)=\"stop()\"\n                (touchstart)=\"goUpClick()\" (touchend)=\"stop()\"></div>\n        </div>\n        <div style=\"height: 34%; width: 100%;\" fxLayoutAlign=\"space-between center\">\n            <div id=\"left\" style=\"height: 100%; width: 33%;\" (mousedown)=\"goLeftClick()\" (mouseup)=\"stop()\"\n                (touchstart)=\"goLeftClick()\" (touchend)=\"stop()\"></div>\n            <div id=\"right\" style=\"height: 100%; width: 33%;\" (mousedown)=\"goRightClick()\" (mouseup)=\"stop()\"\n                (touchstart)=\"goRightClick()\" (touchend)=\"stop()\"></div>\n        </div>\n        <div style=\"height: 33%; width: 100%;\" fxLayoutAlign=\"center center\">\n            <div id=\"down\" style=\"height: 100%; width: 33%;\" (mousedown)=\"goDownClick()\" (mouseup)=\"stop()\"\n                (touchstart)=\"goDownClick()\" (touchend)=\"stop()\"></div>\n        </div>\n    </div>\n</div>\n<button mat-icon-button style=\"height: 75px; width: 75px; position: fixed; bottom: 0; left: 0\">\n    <mat-icon *ngIf=\"interacted; else soundOff\" (click)=\"audioClick()\" style=\"height: 75px; width: 75px; line-height: 75px; font-size: 75px; color: #686868\">volume_up</mat-icon>\n    <ng-template #soundOff>\n        <mat-icon (click)=\"audioClick()\" style=\"height: 75px; width: 75px; line-height: 75px; font-size: 75px; color: #686868\">volume_off</mat-icon>\n    </ng-template>\n</button>");
 
 /***/ }),
 
@@ -389,6 +402,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/progress-spinner */ "./node_modules/@angular/material/esm2015/progress-spinner.js");
 /* harmony import */ var _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/snack-bar */ "./node_modules/@angular/material/esm2015/snack-bar.js");
+/* harmony import */ var _components_about_me_about_me_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/about-me/about-me.component */ "./src/app/components/about-me/about-me.component.ts");
+/* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/material/divider */ "./node_modules/@angular/material/esm2015/divider.js");
+
+
 
 
 
@@ -416,9 +433,11 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
             _components_start_up_start_up_component__WEBPACK_IMPORTED_MODULE_7__["StartUpComponent"],
             _components_test_grid_test_grid_component__WEBPACK_IMPORTED_MODULE_13__["TestGridComponent"],
-            _components_projects_projects_component__WEBPACK_IMPORTED_MODULE_14__["ProjectsComponent"]
+            _components_projects_projects_component__WEBPACK_IMPORTED_MODULE_14__["ProjectsComponent"],
+            _components_about_me_about_me_component__WEBPACK_IMPORTED_MODULE_19__["AboutMeComponent"]
         ],
         imports: [
+            _angular_material_divider__WEBPACK_IMPORTED_MODULE_20__["MatDividerModule"],
             _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -437,6 +456,50 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })
 ], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/about-me/about-me.component.css":
+/*!************************************************************!*\
+  !*** ./src/app/components/about-me/about-me.component.css ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".face {\r\n    height: 10vmin;\r\n    width: 10vmin;\r\n    min-width: 200px;\r\n    min-height: 200px;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    border: solid 10px;\r\n    border-radius: 180px;\r\n    margin-top: 20px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9hYm91dC1tZS9hYm91dC1tZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksY0FBYztJQUNkLGFBQWE7SUFDYixnQkFBZ0I7SUFDaEIsaUJBQWlCO0lBQ2pCLG9CQUFpQjtPQUFqQixpQkFBaUI7SUFDakIsa0JBQWtCO0lBQ2xCLG9CQUFvQjtJQUNwQixnQkFBZ0I7QUFDcEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2Fib3V0LW1lL2Fib3V0LW1lLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZmFjZSB7XHJcbiAgICBoZWlnaHQ6IDEwdm1pbjtcclxuICAgIHdpZHRoOiAxMHZtaW47XHJcbiAgICBtaW4td2lkdGg6IDIwMHB4O1xyXG4gICAgbWluLWhlaWdodDogMjAwcHg7XHJcbiAgICBvYmplY3QtZml0OiBjb3ZlcjtcclxuICAgIGJvcmRlcjogc29saWQgMTBweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDE4MHB4O1xyXG4gICAgbWFyZ2luLXRvcDogMjBweDtcclxufSJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/components/about-me/about-me.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/components/about-me/about-me.component.ts ***!
+  \***********************************************************/
+/*! exports provided: AboutMeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutMeComponent", function() { return AboutMeComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let AboutMeComponent = class AboutMeComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+AboutMeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-about-me',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./about-me.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/about-me/about-me.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./about-me.component.css */ "./src/app/components/about-me/about-me.component.css")).default]
+    })
+], AboutMeComponent);
 
 
 
@@ -492,8 +555,10 @@ let ProjectsComponent = class ProjectsComponent {
         this.singleStatus = 'final';
         this.githubs = [
             'asdf',
+            'https://github.com/dylanwraith/online-portfolio',
             'https://github.com/dylanwraith/employee-management-system',
-            ''
+            'https://github.com/dylanwraith/poker-game',
+            'https://github.com/dylanwraith/binary-search-tree'
         ];
         this.projects = [
             'Software Management Tool',
@@ -504,7 +569,7 @@ let ProjectsComponent = class ProjectsComponent {
         ];
         this.images = [
             '../../../assets/kymera.png',
-            'https://material.angular.io/assets/img/examples/shiba2.jpg',
+            '../../../assets/online-portfolio.PNG',
             '../../../assets/ems.png',
             '../../../assets/poker.png',
             '../../../assets/bst.png'
@@ -630,6 +695,9 @@ let ProjectsComponent = class ProjectsComponent {
             }
             this.singleStatus = 'final';
         }, 250);
+    }
+    goToGithub(index) {
+        window.open(this.githubs[index]);
     }
 };
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1017,11 +1085,11 @@ let TestGridComponent = class TestGridComponent {
         this.spriteUrl = '../../../assets/forward_sprite.PNG';
         this.animating = false;
         this.stage = false;
-        this.home = false;
+        this.home = true;
         this.projects = false;
         this.resume = false;
         this.about = false;
-        this.contact = true;
+        this.contact = false;
         this.audio = new Audio();
         this.interacted = false;
         this.moving = null;
@@ -1029,9 +1097,11 @@ let TestGridComponent = class TestGridComponent {
         this.getScreenSize();
     }
     ngOnInit() { }
+    audioClick() {
+        this.interacted = !this.interacted;
+    }
     // Check for arrow keys being pressed
     handleKeyboardEvent(event) {
-        this.interacted = true;
         if (!this.animating) {
             if (event.key === 'ArrowUp') {
                 this.arrowUp();
@@ -1111,6 +1181,7 @@ let TestGridComponent = class TestGridComponent {
         }
         else if (this.yCoordinate === 6 && this.xCoordinate === 2) {
             // Enter projects page
+            this.stop();
             this.yCoordinate--;
             this.spriteStatus === '1'
                 ? (this.spriteStatus = '2')
@@ -1123,6 +1194,7 @@ let TestGridComponent = class TestGridComponent {
         }
         else if (this.yCoordinate === 6 && this.xCoordinate === 10) {
             // Enter resume page
+            this.stop();
             this.yCoordinate--;
             this.spriteStatus === '1'
                 ? (this.spriteStatus = '2')
@@ -1135,6 +1207,7 @@ let TestGridComponent = class TestGridComponent {
         }
         else if (this.yCoordinate === 12 && this.xCoordinate === 2) {
             // Enter about me page
+            this.stop();
             this.yCoordinate--;
             this.spriteStatus === '1'
                 ? (this.spriteStatus = '2')
@@ -1147,6 +1220,7 @@ let TestGridComponent = class TestGridComponent {
         }
         else if (this.yCoordinate === 12 && this.xCoordinate === 10) {
             // Enter contact page
+            this.stop();
             this.yCoordinate--;
             this.spriteStatus === '1'
                 ? (this.spriteStatus = '2')
@@ -1242,6 +1316,17 @@ let TestGridComponent = class TestGridComponent {
             this.walkDown();
         }, 100);
     }
+    leaveAbout() {
+        this.about = !this.about;
+        this.home = !this.home;
+        setTimeout(() => {
+            this.yCoordinate++;
+            this.spriteStatus === '1'
+                ? (this.spriteStatus = '2')
+                : (this.spriteStatus = '1');
+            this.walkDown();
+        }, 100);
+    }
     sendEmail() {
         this.loading = true;
         const body = new Map();
@@ -1250,6 +1335,7 @@ let TestGridComponent = class TestGridComponent {
             .set('subject', 'Online Portfolio: Email from ' + this.email + ' - ' + this.name)
             .set('text', this.message);
         this.endpoint.sendEmail(body).subscribe(data => {
+            console.log(data);
             this.openSnackBar();
         });
     }
@@ -1266,7 +1352,6 @@ let TestGridComponent = class TestGridComponent {
     goUpClick() {
         if (this.moving === null) {
             this.moving = setInterval(() => {
-                this.interacted = true;
                 if (!this.animating) {
                     this.arrowUp();
                     console.log('going up');
@@ -1277,7 +1362,6 @@ let TestGridComponent = class TestGridComponent {
     goRightClick() {
         if (this.moving === null) {
             this.moving = setInterval(() => {
-                this.interacted = true;
                 if (!this.animating) {
                     this.arrowRight();
                     console.log('going right');
@@ -1288,7 +1372,6 @@ let TestGridComponent = class TestGridComponent {
     goLeftClick() {
         if (this.moving === null) {
             this.moving = setInterval(() => {
-                this.interacted = true;
                 if (!this.animating) {
                     this.arrowLeft();
                     console.log('going left');
@@ -1299,7 +1382,6 @@ let TestGridComponent = class TestGridComponent {
     goDownClick() {
         if (this.moving === null) {
             this.moving = setInterval(() => {
-                this.interacted = true;
                 if (!this.animating) {
                     this.arrowDown();
                     console.log('going down');
@@ -1476,7 +1558,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\dw0519\Desktop\dylanwraith\source\client\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\dw0519\Desktop\dylanwraith\source\src\main.ts */"./src/main.ts");
 
 
 /***/ }),

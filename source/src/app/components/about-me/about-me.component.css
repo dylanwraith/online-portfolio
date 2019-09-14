@@ -1,0 +1,10 @@
+.face {
+    height: 10vmin;
+    width: 10vmin;
+    min-width: 200px;
+    min-height: 200px;
+    object-fit: cover;
+    border: solid 10px;
+    border-radius: 180px;
+    margin-top: 20px;
+}
