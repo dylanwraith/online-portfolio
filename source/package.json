@@ -27,7 +27,7 @@
     "cors": "^2.8.5",
     "flexbox": "0.0.3",
     "hammerjs": "^2.0.8",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mysql": "^2.17.1",
     "ng2-pdf-viewer": "^5.3.4",
     "pokemon-font": "^1.8.1",
